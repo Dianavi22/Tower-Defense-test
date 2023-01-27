@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1766966624509394749}
   - component: {fileID: 1766966624509394750}
   - component: {fileID: 1766966624509394751}
+  - component: {fileID: -500756662174580287}
   m_Layer: 0
   m_Name: Ennemy
   m_TagString: Untagged
@@ -97,3 +98,16 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-500756662174580287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766966624509394736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9950cebc5dfbbb94e8c00541be2301a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20

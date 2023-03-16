@@ -24,7 +24,6 @@ public class PausedMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            print("Escape !!");
 
             if (gameIsPaused)
             {

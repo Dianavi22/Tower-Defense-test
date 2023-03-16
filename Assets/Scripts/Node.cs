@@ -7,6 +7,7 @@ public class Node : MonoBehaviour
     public Vector3 positionOffset;
     private Renderer rend;
     private Color startColor;
+    public Color notEnoughtMoneyColor;
     public GameObject turret;
     private BuildManager buildManager;
     private void Start()
@@ -45,7 +46,16 @@ public class Node : MonoBehaviour
         {
             return;
         }
-        rend.material.color = hoverColor;
+        if (buildManager.hasMoney)
+        {
+            rend.material.color = hoverColor;
+
+        }
+        else
+        {
+            rend.material.color = notEnoughtMoneyColor;
+
+        }
     }
 
     private void OnMouseExit()

@@ -37,13 +37,15 @@ public class BuildManager : MonoBehaviour
         }
         else
         {
- PlayerStats.money -= turretToBuild.cost;
+        PlayerStats.money -= turretToBuild.cost;
         GameObject turret = (GameObject)Instantiate(turretToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
         node.turret = turret;
+
+            GameObject effect = (GameObject)Instantiate(buildEffect, node.GetBuildPosition(), Quaternion.identity);
+            Destroy(effect, 1f);
+            Debug.Log("object buy");
         }
 
-        GameObject effect = (GameObject)Instantiate(buildEffect, node.GetBuildPosition(), Quaternion.identity);
-        Destroy(effect, 1f);
-        Debug.Log("object buy");
+      
     }
 }

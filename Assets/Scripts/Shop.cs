@@ -4,6 +4,7 @@ public class Shop : MonoBehaviour
 {
     public TurretBlueprint standardTurret;
     public TurretBlueprint missileTurret;
+    public TurretBlueprint laserBeamerTurret;
 
     private BuildManager buildManager;
     private void Start()
@@ -12,12 +13,14 @@ public class Shop : MonoBehaviour
     }
     public void SelectStandardTurret()
     {
-        Debug.Log("BUY TURRET");
         buildManager.SelectTurretToBuild(standardTurret);
     }
     public void SelectMissileLauncher()
     {
-        Debug.Log("BUY MISSILE LAUNCHER");
         buildManager.SelectTurretToBuild(missileTurret);
+    }
+    public void SelectLlaserBeamerTurret()
+    {
+        buildManager.SelectTurretToBuild(laserBeamerTurret);
     }
 }

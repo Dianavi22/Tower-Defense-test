@@ -32,8 +32,15 @@ public class Node : MonoBehaviour
 
         if (turret != null)
         {
+            buildManager.SelectedNode(this);
             return;
         }
+
+        if (!buildManager.canBuild)
+        {
+            return;
+        }
+
         buildManager.BuildTurretOn(this);
     }
     private void OnMouseEnter()

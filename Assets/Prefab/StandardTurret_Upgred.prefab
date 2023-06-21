@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 3819908730936650746}
   - component: {fileID: 3309323282689481473}
   m_Layer: 0
-  m_Name: Turret
+  m_Name: StandardTurret_Upgred
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,11 +110,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6f2703d7ab00774c8fde5ba7912f664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 15
+  range: 20
+  bulletPrefab: {fileID: 156593900814659448, guid: 1c6e49fde179fb54bb5b48a0f27f5526, type: 3}
+  fireRate: 1.5
+  useLaser: 0
+  lineRenderer: {fileID: 0}
+  impactEffect: {fileID: 0}
+  impactLight: {fileID: 0}
+  damageOverTime: 20
+  slowAmount: 0.5
   enemyTag: Enemy
   partToRotate: {fileID: 3641639402216006621}
-  fireRate: 1
-  bulletPrefab: {fileID: 156593900814659448, guid: a1e8dbeeed2c8a447806616dab12a780, type: 3}
   firePoint: {fileID: 3562122457450630117}
 --- !u!1 &4592923631777984087
 GameObject:
@@ -177,8 +183,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 928478cc8e490c042bb085ef8d3b836d, type: 2}
   - {fileID: 2100000, guid: f5d6570519587334b9c73d5e38311347, type: 2}
+  - {fileID: 2100000, guid: 928478cc8e490c042bb085ef8d3b836d, type: 2}
   - {fileID: 2100000, guid: 8cf8f691d54a7be4ea722f566715353d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -262,8 +268,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f5d6570519587334b9c73d5e38311347, type: 2}
   - {fileID: 2100000, guid: 8cf8f691d54a7be4ea722f566715353d, type: 2}
+  - {fileID: 2100000, guid: f5d6570519587334b9c73d5e38311347, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -22,7 +22,7 @@ public class PausedMenu : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !GameManager.gameIsOver)
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P) && !GameManager.gameIsOver)
         {
 
             if (gameIsPaused)
@@ -58,6 +58,23 @@ public class PausedMenu : MonoBehaviour
         gameIsPaused = false;
     }
 
- 
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenuScene");
+    }
+
+    public void Retry()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Resume();
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+
+    }
+
+
 
 }

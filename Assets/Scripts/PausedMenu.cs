@@ -7,6 +7,7 @@ public class PausedMenu : MonoBehaviour
     public static bool gameIsPaused = false;
     public GameObject pauseMenuUI;
     public static PausedMenu instance;
+    public SceneFader sceneFader;
 
 
     private void Awake()
@@ -60,7 +61,10 @@ public class PausedMenu : MonoBehaviour
 
     public void MainMenu()
     {
-        SceneManager.LoadScene("MainMenuScene");
+        PausedMenu.gameIsPaused = false;
+        Time.timeScale = 1;
+        sceneFader.FadeTo("MainMenuScene");
+
     }
 
     public void Retry()

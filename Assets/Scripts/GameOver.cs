@@ -7,6 +7,9 @@ using UnityEngine.UI;
 public class GameOver : MonoBehaviour
 {
 
+    public SceneFader sceneFader;
+
+
     [SerializeField] Text roundsText;
     private void OnEnable()
     {
@@ -20,7 +23,8 @@ public class GameOver : MonoBehaviour
     }
     public void Menu()
     {
-        SceneManager.LoadScene("MainMenuScene");
+        sceneFader.FadeTo("MainMenuScene");
+
     }
     public void Quit()
     {

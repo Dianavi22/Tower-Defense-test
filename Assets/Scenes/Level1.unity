@@ -12933,6 +12933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e48b0c47f7b030419d2c4a40fc8bd00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneFader: {fileID: 1787975465654465754}
   roundsText: {fileID: 1214693297}
 --- !u!95 &1303560774
 Animator:
@@ -18238,7 +18239,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3c7aa28926056a4799b6b167c75341d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 1766966624509394748, guid: 8f6aa7b0f4e62a943b168e7c70cd6a1b, type: 3}
+  waves:
+  - enemy: {fileID: 1766966624509394736, guid: 8f6aa7b0f4e62a943b168e7c70cd6a1b, type: 3}
+    count: 1
+    rate: 2
+  - enemy: {fileID: 1766966624509394736, guid: 8f6aa7b0f4e62a943b168e7c70cd6a1b, type: 3}
+    count: 2
+    rate: 2
+  - enemy: {fileID: 1766966624509394736, guid: 8f6aa7b0f4e62a943b168e7c70cd6a1b, type: 3}
+    count: 5
+    rate: 2
+  - enemy: {fileID: 1766966624509394736, guid: ef1c1f3bc2d77f441b37cd988743f32f, type: 3}
+    count: 2
+    rate: 2
+  - enemy: {fileID: 1766966624509394736, guid: 99c11b37d50b52d40aa87b37daa6418b, type: 3}
+    count: 6
+    rate: 2
   _spawnPoint: {fileID: 1366551144}
   timeBetweenWaves: 5.5
   _waveCountdownTimer: {fileID: 985721066}

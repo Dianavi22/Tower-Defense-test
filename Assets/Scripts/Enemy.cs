@@ -23,7 +23,6 @@ public class Enemy : MonoBehaviour
     {
         health -= amount;
         healthBar.fillAmount = health / startHealth;
-        Debug.Log("Hp : " + health);
         if(health <= 0)
         {
             Die();
@@ -34,6 +33,7 @@ public class Enemy : MonoBehaviour
         GameObject deathParticules = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(deathParticules, 2f);
         PlayerStats.money += worth;
+        WaveSpawner.EnemiesAlive--;
         Destroy(gameObject);
     }
 

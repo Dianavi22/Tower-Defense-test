@@ -34,6 +34,7 @@ public class Enemy : MonoBehaviour
         Destroy(deathParticules, 2f);
         PlayerStats.money += worth;
         WaveSpawner.EnemiesAlive--;
+        Debug.Log("Enemy died = " + WaveSpawner.EnemiesAlive--);
         Destroy(gameObject);
     }
 

@@ -34,7 +34,6 @@ public class Node : MonoBehaviour
     {
         if (PlayerStats.money < blueprint.cost)
         {
-            Debug.Log("to expensive");
         }
         else
         {
@@ -46,7 +45,6 @@ public class Node : MonoBehaviour
 
             GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
             Destroy(effect, 1f);
-            Debug.Log("object buy");
         }
     }
 
@@ -56,7 +54,6 @@ public class Node : MonoBehaviour
 
         GameObject effect = (GameObject)Instantiate(buildManager.sellEffect, GetBuildPosition(), Quaternion.identity);
         Destroy(effect, 1f);
-        Debug.Log("object sell");
 
         Destroy(turret);
         turretBlueprint = null;

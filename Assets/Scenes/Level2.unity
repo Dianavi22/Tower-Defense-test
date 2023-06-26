@@ -18258,6 +18258,7 @@ MonoBehaviour:
   _spawnPoint: {fileID: 1366551144}
   timeBetweenWaves: 5.5
   _waveCountdownTimer: {fileID: 985721066}
+  gameManager: {fileID: 1798205963}
 --- !u!114 &1798205960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18313,6 +18314,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 1303560771}
+  nextLevel: Level2
+  levelToUnlock: 2
+  sceneFader: {fileID: 1787975465654465754}
 --- !u!1001 &1810425803
 PrefabInstance:
   m_ObjectHideFlags: 0

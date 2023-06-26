@@ -35,7 +35,6 @@ public class SceneFader : MonoBehaviour
     //scene vers ecran noir  
     IEnumerator FadeOut(string scene)
     {
-        Debug.Log("scene : " + scene);
 
         float t = 0f;
         while (t < 1f)

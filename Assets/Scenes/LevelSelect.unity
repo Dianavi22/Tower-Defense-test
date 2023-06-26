@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7606540401022150848, guid: 758e0ed6cde78a448bec34e94b011331, type: 3}
       propertyPath: m_Name
-      value: Button (Legacy) (1)
+      value: LevelButton2
       objectReference: {fileID: 0}
     - target: {fileID: 7606540401022150849, guid: 758e0ed6cde78a448bec34e94b011331, type: 3}
       propertyPath: m_Pivot.x
@@ -188,15 +188,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7606540401022150849, guid: 758e0ed6cde78a448bec34e94b011331, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7606540401022150849, guid: 758e0ed6cde78a448bec34e94b011331, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7606540401022150849, guid: 758e0ed6cde78a448bec34e94b011331, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7606540401022150849, guid: 758e0ed6cde78a448bec34e94b011331, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -611,6 +611,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneFader: {fileID: 335911618}
+  levelButton:
+  - {fileID: 1680976128}
+  - {fileID: 2137104921}
 --- !u!4 &930409754
 Transform:
   m_ObjectHideFlags: 0
@@ -900,6 +903,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7606540401022150849, guid: 758e0ed6cde78a448bec34e94b011331, type: 3}
   m_PrefabInstance: {fileID: 7606540402566660156}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1680976128 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7606540401022150850, guid: 758e0ed6cde78a448bec34e94b011331, type: 3}
+  m_PrefabInstance: {fileID: 7606540402566660156}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2068875828
 GameObject:
   m_ObjectHideFlags: 0
@@ -1085,6 +1099,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2137104921 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7606540401022150850, guid: 758e0ed6cde78a448bec34e94b011331, type: 3}
+  m_PrefabInstance: {fileID: 216693256}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2143113073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1174,7 +1199,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7606540401022150848, guid: 758e0ed6cde78a448bec34e94b011331, type: 3}
       propertyPath: m_Name
-      value: Button (Legacy)
+      value: LevelButton1
       objectReference: {fileID: 0}
     - target: {fileID: 7606540401022150849, guid: 758e0ed6cde78a448bec34e94b011331, type: 3}
       propertyPath: m_Pivot.x
